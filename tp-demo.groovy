@@ -9,4 +9,8 @@ node {
         sh 'pwd'
         sh 'df -h'
     }
+    stage ('Tree') {
+        sh 'date'
+        sh 'ls'
+    }
 }
