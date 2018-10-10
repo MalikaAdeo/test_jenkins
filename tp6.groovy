@@ -9,7 +9,7 @@ node {
   }
 
   stage ('1- Print Jenskins variables'){
-    echo "env.GLOBAL_JENKINS_VARIABLE"
+    echo "env.nom_var"
   }
   stage ('1- Print all env'){
     echo 'Affiche toutes les variables environnement disponibles :'
@@ -25,7 +25,7 @@ node {
   stage('2- Print parameter'){
     sh '''
        echo "Affichage du paramètre saisie par l'utilisateur"
-       echo "  valeur du paramètre : $missing_param"
+       echo "  valeur du paramètre : $param1"
     '''
 
     // Pour récupérer la valeur dans le script
