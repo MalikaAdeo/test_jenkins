@@ -29,10 +29,10 @@ node {
     '''
 
     // Pour récupérer la valeur dans le script
-    def value = params.param1:g
-    def value_upper = params.param1:g.toUpperCase()
+    def value = params.param1
+    def value_upper = params.param1.toUpperCase()
 
-    println "Print default => " + params.param1:g
+    println "Print default => " + params.param1
     println "Print default => " + value
     println "Print upper case value =>  + value_upper"
 
