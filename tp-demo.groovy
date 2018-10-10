@@ -11,6 +11,6 @@ node {
     }
     stage ('Tree') {
         sh 'date'
-        sh 'ls'
+        sh 'env'
     }
 }
